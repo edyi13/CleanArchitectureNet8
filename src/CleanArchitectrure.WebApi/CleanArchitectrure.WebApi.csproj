@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\V2\**" />
+    <Content Remove="Controllers\V2\**" />
+    <EmbeddedResource Remove="Controllers\V2\**" />
+    <None Remove="Controllers\V2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitectrure.Application.UseCases\CleanArchitectrure.Application.UseCases.csproj" />
+    <ProjectReference Include="..\CleanArchitectrure.Persistence\CleanArchitectrure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
