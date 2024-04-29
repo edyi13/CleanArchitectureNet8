@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Users\**" />
-    <EmbeddedResource Remove="Users\**" />
-    <None Remove="Users\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
@@ -23,6 +17,11 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectrure.Application.Dto\CleanArchitectrure.Application.Dto.csproj" />
     <ProjectReference Include="..\CleanArchitectrure.Application.Interface\CleanArchitectrure.Application.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Users\Commands\" />
+    <Folder Include="Users\Queries\" />
   </ItemGroup>
 
 </Project>

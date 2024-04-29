@@ -1,14 +1,8 @@
 ﻿using AutoMapper;
-using CleanArchitectrure.Application.Dto;
 using CleanArchitectrure.Application.Interface.Persistence;
 using CleanArchitectrure.Application.UseCases.Commons.Bases;
 using CleanArchitectrure.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchitectrure.Application.UseCases.Customers.Commands.CreateCustomerCommand
 {

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using CleanArchitectrure.Application.UseCases.Customers.Queries.GetAllCustomerQuery;
 using CleanArchitectrure.Application.UseCases.Customers.Queries.GetByIdCustomerQuery;
